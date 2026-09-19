@@ -1,0 +1,101 @@
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.resultWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.resultCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.resultTitle {
+  font-size: 22px;
+}
+
+.resultSubtitle {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.scoreCircle {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 6px solid var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--space-2) 0;
+}
+
+.scorePercent {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.scoreText {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.resultActions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.reviewList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  text-align: left;
+}
+
+.reviewItem {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.correctIcon {
+  color: var(--color-success);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.incorrectIcon {
+  color: var(--color-danger);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.reviewQuestion {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.reviewAnswer {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}

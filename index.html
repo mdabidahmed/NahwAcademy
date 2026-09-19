@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nahw Academy — Understand Arabic, Deepen Imaan. Learn Arabic grammar (Nahw) with bilingual lessons, practice, quizzes and flashcards." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nahw Academy</title>
+    <script>
+      // Companion to public/404.html: restore the real deep-link URL (via
+      // history.replaceState) before React Router mounts, so refreshes and
+      // shared links to any route work on GitHub Pages.
+      ;(function () {
+        var params = new URLSearchParams(window.location.search)
+        var redirect = params.get('redirect')
+        if (redirect) {
+          params.delete('redirect')
+          var rest = params.toString()
+          var basePath = window.location.pathname
+          window.history.replaceState(null, '', basePath + redirect + (rest ? '?' + rest : ''))
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

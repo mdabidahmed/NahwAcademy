@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nahw Academy</title>
+    <script>
+      // GitHub Pages has no server-side router, so a hard refresh or deep
+      // link on any client-side route (e.g. /NahwAcademy/learn/...) 404s.
+      // This page re-encodes the requested path as a query string and
+      // redirects to the app root, where the script in index.html decodes
+      // it and restores the real URL via history.replaceState before React
+      // Router mounts.
+      var basePath = '/NahwAcademy/'
+      var path = window.location.pathname.slice(basePath.length)
+      var redirect = window.location.origin + basePath + '?redirect=' + encodeURIComponent(path + window.location.search + window.location.hash)
+      window.location.replace(redirect)
+    </script>
+  </head>
+  <body></body>
+</html>

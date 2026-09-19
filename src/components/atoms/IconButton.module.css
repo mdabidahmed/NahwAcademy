@@ -1,0 +1,28 @@
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--color-text-secondary);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.iconButton:hover {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+.filled {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.active {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary);
+}

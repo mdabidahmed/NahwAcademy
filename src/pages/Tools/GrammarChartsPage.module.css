@@ -1,0 +1,98 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 22px;
+}
+
+.intro {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.root {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-pill);
+}
+
+.branches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.connector {
+  width: 1px;
+  height: 20px;
+  background: var(--color-border);
+}
+
+.chapterChart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.chartTitle {
+  font-size: 16px;
+}
+
+.chapterList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.chapterItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.chapterNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+  .branches {
+    grid-template-columns: 1fr;
+  }
+}
